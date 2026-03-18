@@ -27,9 +27,11 @@
 // export const updateTask = (taskId, data) => api.put(`/tasks/${taskId}`, data);
 
 // export default api;
+// console.log("API URL:", import.meta.env.VITE_API_URL);
 import axios from 'axios';
 
 // const API_URL = 'http://localhost:8000/api';
+
 const API_URL = import.meta.env.VITE_API_URL;
 
 const api = axios.create({
@@ -59,3 +61,4 @@ export const createTask        = (projectId, data) => api.post(`/projects/${proj
 export const updateTask        = (taskId, data)    => api.put(`/tasks/${taskId}`, data);
 
 export default api;
+console.log("API URL:", import.meta.env.VITE_API_URL);
