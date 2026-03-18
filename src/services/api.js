@@ -30,9 +30,9 @@
 // console.log("API URL:", import.meta.env.VITE_API_URL);
 import axios from 'axios';
 
-// const API_URL = 'http://localhost:8000/api';
 
-const API_URL = import.meta.env.VITE_API_URL;
+
+const API_URL = "https://task-manager-laravel-production-c034.up.railway.app/api";
 
 const api = axios.create({
   baseURL: API_URL,
